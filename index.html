@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Webpage</title>
+  <link rel="stylesheet" href="/website.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/d68ba3a598.js" crossorigin="anonymous"></script>
+</head>
+<body class="about-page">
+ <header class="header">
+        <nav class="navbar">
+          <div class="logo">MrCool<span>.</span></div>
+          
+
+          
+          
+          <ul>
+           <li><a class="a" href="#home">Home</a></li>
+           <li><a class="a" href="#about">About</a></li>
+           <li><a class="a" href="#services">Services</a></li>
+           <li><a class="a" href="#projects">Projects</a></li>
+           <li><a class="a" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+       </header>
+    <section class="hero" id="home">
+      
+       <main>
+       <div class="profile">
+         <img class="profile-img" src="/Images/Burna boy.jpg" alt="My picture">
+         <h1 class="profile-name">Olusanya Uthman</h1>
+         <h3 class="profile-about">A Creative Freelancer & Full Stack Developer</h3>
+         <a href="" ></a>
+       </div>
+       </main>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-me"> <!-- main container -->
+  <h2 class="about-title" >About <span>Me</span></h2> <!-- centered title -->
+
+  <div class="about-content"> <!-- nested container for text + image -->
+    <div class="about-image">
+      <img class="about-text reveal" src="/images/my pic.jpg" alt="Olusanya Uthman">
+    </div>
+    <div class="about-text">
+      <p class="about-text reveal">Hello! I'm [Your Name], a [your profession]. I love creating awesome websites and solving problems with code...</p>
+      <a href="your-cv.pdf" class="about-text reveal" class="downloadcv-link" download=""><button class="downloadcv-btn"><b>Download CV</b></button></a>
+    </div>
+ 
+
+    
+  </div>
+</div>
+
+
+
+
+        
+    </section>
+
+<section class="services" id="services">
+  <div class="services-header">
+    <span class="services-tag">OUR SERVICES</span>
+    <h2>What I Do Best</h2>
+  </div>
+
+  <div class="services-container">
+    <div class="services-card">
+      <h3>Frontend Development</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo mollitia cum ex incidunt veritatis quis porro, debitis nesciunt. Praesentium officiis quia veniam nostrum. Numquam perspiciatis maxime natus deleniti ea molestiae.</p>
+    </div>
+
+    <div class="services-card">
+      <h3>Web Design</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo mollitia cum ex incidunt veritatis quis porro, debitis nesciunt. Praesentium officiis quia veniam nostrum. Numquam perspiciatis maxime natus deleniti ea molestiae.</p>
+    </div>
+
+    <div class="services-card">
+      <h3>Problem Solving</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo mollitia cum ex incidunt veritatis quis porro, debitis nesciunt. Praesentium officiis quia veniam nostrum. Numquam perspiciatis maxime natus deleniti ea molestiae.</p>
+    </div>
+
+  </div>
+  <script>
+  const reveals = document.querySelectorAll('.reveal');
+
+  function revealOnScroll() {
+    const windowHeight = window.innerHeight;
+
+    reveals.forEach(el => {
+      const elementTop = el.getBoundingClientRect().top;
+      const revealPoint = 100;
+
+      if (elementTop < windowHeight - revealPoint) {
+        el.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', revealOnScroll);
+  revealOnScroll(); // run once on load
+</script>
+</section>
+
+<section class="projects" id="projects">
+  <div class="projects-header">
+    <span class="projects-tag">MY WORK</span>
+    <h2>Recent Projects</h2>
+    <p class="projects-description">Here are some of the projects I've worked on recently</p>
+  </div>
+
+  <div class="projects-container">
+   <div class="project-card">
+    <img class="project-img" src="/images/services.png" alt="Project name">
+    <h3>Portfolio Website</h3>
+    <p>A responsive portfolio site showcasing my work with clean UI/UX</p>
+   </div>
+
+   <div class="project-card">
+    <img class="project-img" src="/images/services.png" alt="Project name">
+    <h3>E-commerce App</h3>
+    <p>Full-stack e-commerce application with payment integration</p>
+   </div>
+
+   <div class="project-card">
+    <img class="project-img" src="/images/services.png" alt="Project name">
+    <h3>Blog Platform</h3>
+    <p>CMS for creating and managing blog posts with user authentication</p>
+   </div>
+
+   <div class="project-card">
+    <img class="project-img" src="/images/services.png" alt="Project name">
+    <h3>Real-time Weather App</h3>
+    <p>Short description about the project</p>
+   </div>
+  </div>
+</section>
+ <!-- Contact Section -->
+<section class="contact-section" id="contact">
+  <div class="contact-container">
+    <h2>Get In Touch</h2>
+    <p>
+      Have a project or idea? I’m open to collaborations and freelance work.
+    </p>
+
+    <!-- Contact Form -->
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Contact Cards / Links -->
+    <div class="contact-cards">
+      <a href="mailto:olusanyauthman2@gmail.com" target="_blank" class="contact-card">
+        <i class="fa-solid fa-envelope"></i> Email
+      </a>
+      <a href="https://wa.me/2349167669337" target="_blank" class="contact-card">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+      </a>
+      <a href="https://github.com/yourusername" target="_blank" class="contact-card">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+<p>&copy; 2026 Mr Cool. All rights reserved</p>
+<div class="footer-links">
+  <a href="#services">Services</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</div>
+</footer>
+
+<button id="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+<script>
+const btn = document.getElementById('back-to-top');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    btn.style.display = 'block';
+  } else {
+    btn.style.display = 'none';
+  }
+});
+
+btn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+
+</body>
+</html>
