@@ -45,7 +45,7 @@ main{
 }
 /*First Section*/
 .hero{
-  background-image: url("Image/gradient-background-6016x3384-11027.jpg");
+  background-image: url("image/gradient-background-6016x3384-11027.jpg");
   min-height: 100vp;
   background-size: cover;
   background-position: center;
@@ -370,7 +370,7 @@ justify-content: space-between;
 
 
 .services{
-  background-image: url(Image/image\ copy\ 13.png);
+  background-image: url(image/image\ copy\ 13.png);
   background-size: cover;
   min-height: 100vh;
   background-position: center;
@@ -444,7 +444,7 @@ justify-content: space-between;
 }
 
 .projects{
-  background-image: url(Image/image\ copy\ 14.png);
+  background-image: url(image/image\ copy\ 14.png);
   
   background-size: cover;
   min-height: 100vh;
