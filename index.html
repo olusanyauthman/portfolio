@@ -40,45 +40,18 @@
       <div class="about-container"> <!-- main container -->
 
         <div class="about-img">
-          <img class="about-text reveal" src="/image/my pic.jpg" alt="Olusanya Uthman">
+          <img id="img" class="about-text reveal" src="/image/my pic.jpg" alt="Olusanya Uthman">
         </div>
 
            <div class="about-text">
              <h2 class="about-title" >About <span>Me</span></h2> <!-- centered title -->
-             <p class="about-text reveal">Hello! I'm Uthman, a frontend developer focused on building clean, responsive
+             <p id="text" class="about-text reveal">Hello! I'm Uthman, a frontend developer focused on building clean, responsive
                websites with modern HTML, CSS, and JavaScript.
               </p>
              <a href="MY CV.pdf" class="about-text reveal" id="downloadbtn" download=""><b>Download CV</b></a>
            </div>
       </div>
-    </section>
-
-<section class="services" id="services">
-  <div class="services-container">
-  
-    <p class="services-subtitle">OUR SERVICES</p>
-    <h2 class="services-title">What I Do Best</h2>
-  
-
-   <div class="services-cards">
-
-    <div class="services-card">
-      <h3>Frontend Development</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo mollitia cum ex incidunt veritatis quis porro, debitis nesciunt. Praesentium officiis quia veniam nostrum. Numquam perspiciatis maxime natus deleniti ea molestiae.</p>
-    </div>
-
-    <div class="services-card">
-      <h3>Web Design</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo mollitia cum ex incidunt veritatis quis porro, debitis nesciunt. Praesentium officiis quia veniam nostrum. Numquam perspiciatis maxime natus deleniti ea molestiae.</p>
-    </div>
-
-    <div class="services-card">
-      <h3>Problem Solving</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo mollitia cum ex incidunt veritatis quis porro, debitis nesciunt. Praesentium officiis quia veniam nostrum. Numquam perspiciatis maxime natus deleniti ea molestiae.</p>
-    </div>
-  </div>
-  </div>
-  <script>
+      <script>
   const reveals = document.querySelectorAll('.reveal');
 
   function revealOnScroll() {
@@ -97,6 +70,35 @@
   window.addEventListener('scroll', revealOnScroll);
   revealOnScroll(); // run once on load
 </script>
+    </section>
+
+<section class="services" id="services">
+  <div class="services-header">
+  
+    <p class="services-subtitle">OUR SERVICES</p>
+    <h2 class="services-title">What I Do Best</h2>
+
+  </div>
+
+   <div class="services-container">
+
+    <div class="services-card">
+      <h3>Frontend Development</h3>
+      <p>I build interactive, dynamic interfaces using HTML, CSS, and JavaScript. I ensure websites are fast, accessible, and visually appealing while keeping the code clean and maintainable.</p>
+    </div>
+
+    <div class="services-card">
+      <h3>Web Design</h3>
+      <p>I create modern, responsive websites that look great on all devices. My designs focus on user experience, clean layouts, and intuitive navigation to engage visitors effectively.</p>   
+    </div>
+
+    <div class="services-card">
+      <h3>Problem Solving</h3>
+      <p>I develop robust server-side systems and APIs that power websites and applications. My work ensures smooth data flow, security, and scalability for a reliable user experience.</p>
+    </div>
+  </div>
+  
+  
 </section>
 
 <section class="projects" id="projects">
@@ -190,5 +192,4 @@ btn.addEventListener('click', () => {
 </script>
 
 </body>
-
 </html>
