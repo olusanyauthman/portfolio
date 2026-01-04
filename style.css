@@ -171,7 +171,18 @@ justify-content: space-between;
     padding: 10px;
     border-radius: 8px;
   }
+  
+  .logo{
+    font-size: 1.5em;
+    margin: 10px 0 5px 10px;
+    padding: 0;
+  }
 
+  .header{
+    height: 50px;
+    background: transparent;
+    background-color: #0206175e;
+  }
   .navbar ul.active {
     display: flex;
   }
@@ -215,7 +226,7 @@ justify-content: space-between;
   .hero .profile-img{
     width: 250px;
     height: 250px;
-    margin-top: 150px;
+    margin-top: 100px;
   }
 
   .profile-name{
@@ -723,4 +734,3 @@ justify-content: space-between;
     grid-template-columns: 1fr;
   }
 }
-
