@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Webpage</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Olusanya Uthman | Portfolio</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" type="image/png" href="/image/image.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
@@ -13,8 +14,7 @@
 <body class="about-page">
  <header class="header">
         <nav class="navbar">
-          <div class="logo">MrCool<span>.</span></div>
-        
+          <div class="logo">MrCool<span>.</span></div> 
           <ul>
            <li><a class="a" href="#home">Home</a></li>
            <li><a class="a" href="#about">About</a></li>
@@ -28,7 +28,7 @@
       
        <main>
        <div class="profile">
-         <img class="profile-img" src="image/Burna boy.jpg" alt="My picture">
+         <img class="profile-img" src="/Image/Burna boy.jpg" alt="My picture">
          <h1 class="profile-name">Olusanya Uthman</h1>
          <h3 class="profile-about">A Creative Freelancer & Full Stack Developer</h3>
          <a href="" ></a>
@@ -37,36 +37,31 @@
     </section>
 
     <section class="about" id="about">
-      <div class="about-me"> <!-- main container -->
-  <h2 class="about-title" >About <span>Me</span></h2> <!-- centered title -->
+      <div class="about-container"> <!-- main container -->
 
-  <div class="about-content"> <!-- nested container for text + image -->
-    <div class="about-image">
-      <img class="about-text reveal" src="/image/my pic.jpg" alt="Olusanya Uthman">
-    </div>
-    <div class="about-text">
-      <p class="about-text reveal">Hello! I'm [Your Name], a [your profession]. I love creating awesome websites and solving problems with code...</p>
-      <a href="MY CV.pdf" class="about-text reveal" class="downloadcv-link" download=""><button class="downloadcv-btn"><b>Download CV</b></button></a>
-    </div>
- 
+        <div class="about-img">
+          <img class="about-text reveal" src="/image/my pic.jpg" alt="Olusanya Uthman">
+        </div>
 
-    
-  </div>
-</div>
-
-
-
-
-        
+           <div class="about-text">
+             <h2 class="about-title" >About <span>Me</span></h2> <!-- centered title -->
+             <p class="about-text reveal">Hello! I'm Uthman, a frontend developer focused on building clean, responsive
+               websites with modern HTML, CSS, and JavaScript.
+              </p>
+             <a href="MY CV.pdf" class="about-text reveal" id="downloadbtn" download=""><b>Download CV</b></a>
+           </div>
+      </div>
     </section>
 
 <section class="services" id="services">
-  <div class="services-header">
-    <span class="services-tag">OUR SERVICES</span>
-    <h2>What I Do Best</h2>
-  </div>
-
   <div class="services-container">
+  
+    <p class="services-subtitle">OUR SERVICES</p>
+    <h2 class="services-title">What I Do Best</h2>
+  
+
+   <div class="services-cards">
+
     <div class="services-card">
       <h3>Frontend Development</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo mollitia cum ex incidunt veritatis quis porro, debitis nesciunt. Praesentium officiis quia veniam nostrum. Numquam perspiciatis maxime natus deleniti ea molestiae.</p>
@@ -81,7 +76,7 @@
       <h3>Problem Solving</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo mollitia cum ex incidunt veritatis quis porro, debitis nesciunt. Praesentium officiis quia veniam nostrum. Numquam perspiciatis maxime natus deleniti ea molestiae.</p>
     </div>
-
+  </div>
   </div>
   <script>
   const reveals = document.querySelectorAll('.reveal');
@@ -147,10 +142,10 @@
 
     <!-- Contact Form -->
     <form class="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
+      <input type="text" placeholder="Your Name" required class="contact-input"/>
+      <input type="email" placeholder="Your Email" required class="contact-input" />
+      <textarea placeholder="Your Message" required class="contact-textarea"></textarea>
+      <button type="submit" class="send-btn">Send Message</button>
     </form>
 
     <!-- Contact Cards / Links -->
@@ -195,5 +190,4 @@ btn.addEventListener('click', () => {
 </script>
 
 </body>
-
 </html>
