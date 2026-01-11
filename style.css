@@ -174,7 +174,7 @@ justify-content: space-between;
   
   .logo{
     font-size: 1.5em;
-    margin: 10px 0 5px 10px;
+    margin: 10px 0 5px 20px;
     padding: 0;
   }
 
@@ -528,7 +528,7 @@ justify-content: space-between;
   border: 1px solid #fff;
   border-radius: 12px;
   text-align: center;
-  min-width: 250px;
+  min-width: 300px;
   max-width: 350px;
   flex-direction: column;
   justify-content: space-between;
@@ -571,7 +571,7 @@ justify-content: space-between;
 
 /* Contact Section */
 .contact-section {
-  padding: 100px;
+  padding: 100px 20px 30px 20px;
   background-color: #0d1117; /* dark background */
   color: #ffffff;
   font-family: 'Arial', sans-serif;
