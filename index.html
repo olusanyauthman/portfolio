@@ -12,18 +12,28 @@
 <script src="https://kit.fontawesome.com/d68ba3a598.js" crossorigin="anonymous"></script>
 </head>
 <body class="about-page">
- <header class="header">
-        <nav class="navbar">
-          <div class="logo">MrCool<span>.</span></div> 
-          <ul>
-           <li><a class="a" href="#home">Home</a></li>
-           <li><a class="a" href="#about">About</a></li>
-           <li><a class="a" href="#services">Services</a></li>
-           <li><a class="a" href="#projects">Projects</a></li>
-           <li><a class="a" href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-       </header>
+     
+     <nav>
+      <pre id="logo">Mr Cool</pre>
+      <input type="checkbox" id="sidebar-active">
+      <label for="sidebar-active" class="open-sidebar-button">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+      </label>
+
+       <label for="sidebar-active" id="overlay"></label>
+      <div class="links-container">
+        <label for="sidebar-active" class="close-sidebar-button">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        </label>
+
+       
+        <a class="home-link" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+     </nav>
     <section class="hero" id="home">
       
        <main>
@@ -31,7 +41,7 @@
          <img class="profile-img" src="/image/Burna boy.jpg" alt="My picture">
          <h1 class="profile-name">Olusanya Uthman</h1>
          <h3 class="profile-about">A Creative Freelancer & Full Stack Developer</h3>
-         <a href="" ></a>
+         
        </div>
        </main>
     </section>
