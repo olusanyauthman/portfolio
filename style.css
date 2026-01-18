@@ -38,7 +38,8 @@ nav{
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  
+  border-radius: 30px;
+  margin-top: 10px;
 }
 
 .links-container{
@@ -49,7 +50,10 @@ nav{
   width: 100%;
 }
 
-
+.contact-link{
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+}
 #logo{
   font-weight: bold;
   align-items: center;
@@ -167,7 +171,10 @@ main{
     margin-left: 20px;
     
    }
-
+    
+   .contact-link{
+    border-radius: 0;
+   }
    .open-sidebar-button{
     margin-left: auto;
    }
